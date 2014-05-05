@@ -17,7 +17,7 @@ token.getResource(client, token, "/path/to/resource?name=value");
 ```
 With this grant type, the client application doesn't need to store the username/password of the user. Those credentials are asked once and exchanged for an access token. This token can then be used to access protected resources. 
 
-To check if a token is expired:
+To check if a token has expired:
 
 ```java
 token.isExpired();
