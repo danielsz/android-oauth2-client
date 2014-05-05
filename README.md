@@ -19,10 +19,16 @@ With this grant type, the client application doesn't need to store the username/
 This token can be stored and used to both refresh itself and to access protected resources.
 When you attempt to access a resource with an expired token, a new token will automatically be generated based on the refresh token before the request is made. 
 
+To check if a token is expired:
+
+```java
+token.isExpired();
+```
+
 To manually refresh a token:
 
 ```java
-Token newToken = oldToken.refresh(client);
+Token newToken = token.refresh(client);
 ```
 
 ### Assumptions

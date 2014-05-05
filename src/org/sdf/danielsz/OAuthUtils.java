@@ -39,10 +39,6 @@ import android.util.Base64;
 public class OAuthUtils {
 
 	public static String getProtectedResource(OAuth2Client client, Token token, String path) {
-		if (System.currentTimeMillis() >= token.getExpiresAt()) {
-			System.out.println("Token expired, regenerating token");
-			token = token.refresh(client);
-		}
 		
 		String resourceURL = client.getSite() + path;
 		HttpGet get = new HttpGet(resourceURL);

@@ -15,7 +15,7 @@ public class Token {
 			this.tokenType = tokenType;
 			this.refreshToken = refreshToken;
 			this.accessToken = accessToken;
-			this.expiresAt = expiresIn + System.currentTimeMillis();
+			this.expiresAt = (expiresIn * 1000) + System.currentTimeMillis();
 		}
 
 
@@ -39,6 +39,10 @@ public class Token {
 
 		public String getAccessToken() {
 			return accessToken;
+		}
+		
+		public boolean isExpired() {
+		 return (System.currentTimeMillis() >= this.getExpiresAt()) ? true : false;
 		}
 		
 		public String getResource(OAuth2Client client, Token token, String path) {
