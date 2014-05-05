@@ -49,4 +49,4 @@ This software is released as open source under the LGPLv3 license. If you need a
 
 ## Donations
 
-As most developers, I'm working on multiple projects in parallel. If this project is important to you, you're welcome to signal it to me by sending me a donation via paypal (or gittip). To send money via paypal, use the email address in my github profile and specify in the subject it's for mmailer. On [gittip](http://www.gittip.com/danielsz/ "Gittip"), my username is danielsz. Thank you in advance.
+As most developers, I'm working on multiple projects in parallel. If this project is important to you, you're welcome to signal it to me by sending me a donation via paypal or gittip. For paypal, use the email address in my github profile and specify in the subject it's for the OAuth2 client. On [gittip](http://www.gittip.com/danielsz/ "Gittip"), my username is danielsz. Thank you.
