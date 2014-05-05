@@ -10,14 +10,12 @@ Android OAuth2 clients are plentiful. Oddly enough, they all seem to focus on th
 import org.sdf.danielsz.OAuth2Client;
 import org.sdf.danielsz.Token;
 
-OAuth2Client client = new OAuth2Client(username, password, app-id, app-secret, site);
+OAuth2Client client = new OAuth2Client("username", "password", "app-id", "app-secret", "site");
 Token token = client.getAccessToken();
 
 token.getResource(client, token, "/path/to/resource?name=value");
 ```
-With this grant type, the client application doesn't need to store the username/password of the user. Those credentials are asked once and then exchanged for an access token.
-This token can be stored and used to both refresh itself and to access protected resources.
-When you attempt to access a resource with an expired token, a new token will automatically be generated based on the refresh token before the request is made. 
+With this grant type, the client application doesn't need to store the username/password of the user. Those credentials are asked once and exchanged for an access token. This token can then be used to access protected resources. 
 
 To check if a token is expired:
 
@@ -25,11 +23,13 @@ To check if a token is expired:
 token.isExpired();
 ```
 
-To manually refresh a token:
+To refresh a token:
 
 ```java
 Token newToken = token.refresh(client);
 ```
+
+A more involved example can be found [here](https://github.com/danielsz/oauth2-client).
 
 ### Assumptions
 
