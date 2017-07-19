@@ -1,5 +1,5 @@
 # android-oauth2-client
-This is a folk from ` danielsz/android-oauth2-client`. What I have done is create an empty Android Library project on Android Studio, then copy source code from original repository and config to make it can be built using gradle.
+This is a fork from ` danielsz/android-oauth2-client`. What I have done is create an empty Android Library project on Android Studio, then copy source code from original repository and config to make it can be built using gradle.
 
 
 # Install
