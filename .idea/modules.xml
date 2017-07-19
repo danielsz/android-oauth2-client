@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Oauthen2Client/Oauthen2Client.iml" filepath="$PROJECT_DIR$/Oauthen2Client/Oauthen2Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-oauth2-client.iml" filepath="$PROJECT_DIR$/android-oauth2-client.iml" />
+    </modules>
+  </component>
+</project>
