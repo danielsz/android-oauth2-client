@@ -372,7 +372,7 @@ public class OAuthUtils {
 		}
 		for (int j = 0; j < child.getLength(); j++) {
 			if (child.item(j).getNodeType() == org.w3c.dom.Node.ELEMENT_NODE) {
-				org.w3c.dom.Element childElement = (org.w3c.dom.Element) child
+				Element childElement = (Element) child
 						.item(j);
 				if (childElement.hasChildNodes()) {
 					System.out.println(childElement.getTagName() + " : "
